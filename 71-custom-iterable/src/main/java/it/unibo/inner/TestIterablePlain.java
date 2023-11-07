@@ -11,7 +11,7 @@ public class TestIterablePlain {
     private TestIterablePlain() {}
 
     private static <T> IterableWithPolicy<T> getIterableWithPolicy(T[] elements) {
-        return null; // TODO: return the implementation of IterableWithPolicy
+        return it.unibo.inner.impl.IterablePlain(elements);
     }
 
     public static void main(final String[] args) {
