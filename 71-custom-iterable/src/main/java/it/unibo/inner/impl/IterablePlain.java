@@ -24,7 +24,6 @@ public class IterablePlain<T> implements IterableWithPolicy<T> {
         private int current;
 
         public IteratorImpl(){
-            super();
             this.current = 0;
         }
 
@@ -37,7 +36,7 @@ public class IterablePlain<T> implements IterableWithPolicy<T> {
         public T next() {
             if (hasNext()){
                 current+=1;
-                return elems.get(current);
+                return elems.get(current-1);
             } else {
                 return null;
             }
